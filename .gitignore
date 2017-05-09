@@ -1,4 +1,32 @@
-bin/
-include/
-lib/
+*.py[co]
+
+# Packages
+*.egg
+*.egg-info
+dist
+build
+eggs
+parts
+bin
+var
+sdist
+develop-eggs
+.installed.cfg
+
+# virtual enviroment
+include
+lib
+
+# Installer logs
+pip-log.txt
 pip-selfcheck.json
+
+# Translations
+*.mo
+
+# Mr Developer
+.mr.developer.cfg
+
+# local config
+local.cfg
+secret.cfg
