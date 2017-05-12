@@ -13,6 +13,9 @@ sdist
 develop-eggs
 .installed.cfg
 
+# Installer logs
+.plone.versioncheck.tracked.json
+
 # virtual enviroment
 include
 lib
