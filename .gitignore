@@ -17,8 +17,8 @@ develop-eggs
 .plone.versioncheck.tracked.json
 
 # virtual enviroment
-include
-lib
+include/
+lib/
 
 # Installer logs
 pip-log.txt
@@ -33,3 +33,6 @@ pip-selfcheck.json
 # local config
 local.cfg
 secret.cfg
+
+# other
+etc/
