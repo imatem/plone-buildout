@@ -46,6 +46,6 @@ Build Plone
 
 .. code-block:: bash
 
-    $ virtualenv-2.7 --no-site-packages .
+    $ virtualenv-2.7 --no-setuptools .
     $ ./bin/pip install -r requirements.txt
     $ ./bin/buildout
