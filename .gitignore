@@ -4,6 +4,8 @@
 # Packages
 *.egg
 *.egg-info
+*~
+.installed.cfg
 dist
 build
 eggs
@@ -12,7 +14,6 @@ bin
 var
 sdist
 develop-eggs
-.installed.cfg
 
 # Installer logs
 .plone.versioncheck.tracked.json
@@ -38,3 +39,6 @@ secret.cfg
 # other
 etc/
 .plone.versioncheck.cache/
+
+# sublime project
+*.sublime-workspace
