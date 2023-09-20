@@ -42,3 +42,6 @@ etc/
 
 # sublime project
 *.sublime-workspace
+
+# pyenv
+.python-version
