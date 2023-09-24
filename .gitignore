@@ -39,6 +39,7 @@ secret.cfg
 # other
 etc/
 .plone.versioncheck.cache/
+.python-version
 
 # sublime project
 *.sublime-workspace

@@ -46,8 +46,30 @@ Build Plone
 
 .. code-block:: bash
 
-    $ virtualenv-3.7 .
-    $ bin/pip install --upgrade pip
-    $ bin/pip install -r requirements.txt
-    $ bin/buildout
-    $ bin/instance fg
+    pyenv virtualenv 3.11.5 vname
+    pyenv local vname 
+    pip install -r requirements.txt
+    buildout
+    instance fg
+
+if buildout fails installing Pillow due to zlib error (Mac OS Ventura)
+
+.. code-block:: bash
+
+    export LDFLAGS="-L/opt/homebrew/opt/zlib/lib"
+    export CPPFLAGS="-I/opt/homebrew/opt/zlib/include"
+    export PKG_CONFIG_PATH="/opt/homebrew/opt/zlib/lib/pkgconfig"
+
+be carefull with homebrewpath
+
+.. code-block:: bash
+    
+    export PKG_CONFIG_PATH="/usr/local/opt/zlib/lib/pkgconfig"
+
+rerun buildout 
+
+if that fails install  with pip
+
+.. code-block:: bash
+
+    pip install Pillow==4.3.0
