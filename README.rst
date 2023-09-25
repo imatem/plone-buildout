@@ -42,12 +42,36 @@ Symlink to the file that best fits you local environment. At first that is usual
 
     ln -s profiles/local_develop.cfg local.cfg
 
+setup a virtual environment
+
+.. code-block:: bash
+
+    pyenv virtualenv 3.11.5 dev6
+    pyenv local dev6
+
 Build Plone
 
 .. code-block:: bash
 
-    pyenv virtualenv 3.11.5 vname
-    pyenv local vname 
     pip install -r requirements.txt
     buildout
-    instance fg
+
+if buildout fails installing Pillow due to zlib error (Mac OS Ventura)
+
+.. code-block:: bash
+
+    export LDFLAGS="-L/opt/homebrew/opt/zlib/lib"
+    export CPPFLAGS="-I/opt/homebrew/opt/zlib/include"
+    export PKG_CONFIG_PATH="/opt/homebrew/opt/zlib/lib/pkgconfig"
+
+be carefull with homebrewpath
+
+.. code-block:: bash
+    
+    export PKG_CONFIG_PATH="/usr/local/opt/zlib/lib/pkgconfig"
+
+rerun buildout or install  with pip
+
+.. code-block:: bash
+
+    pip install Pillow==4.3.0
