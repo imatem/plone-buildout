@@ -46,7 +46,7 @@ setup a virtual environment
 
 .. code-block:: bash
 
-    pyenv virtualenv 3.11.5 dev6
+    pyenv virtualenv 3.12.7 dev6
     pyenv local dev6
 
 Build Plone
