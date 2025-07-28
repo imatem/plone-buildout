@@ -74,4 +74,4 @@ rerun buildout or install  with pip
 
 .. code-block:: bash
 
-    pip install Pillow==4.3.0
+    pip install Pillow==11.0.0
