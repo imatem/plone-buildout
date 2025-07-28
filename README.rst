@@ -46,7 +46,7 @@ setup a virtual environment
 
 .. code-block:: bash
 
-    pyenv virtualenv 3.12.7 dev6
+    pyenv virtualenv 3.12.10 dev6
     pyenv local dev6
 
 Build Plone
@@ -67,7 +67,7 @@ if buildout fails installing Pillow due to zlib error (Mac OS Ventura)
 be carefull with homebrewpath
 
 .. code-block:: bash
-    
+
     export PKG_CONFIG_PATH="/usr/local/opt/zlib/lib/pkgconfig"
 
 rerun buildout or install  with pip
