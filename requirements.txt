@@ -2,4 +2,4 @@ packaging==26.2
 pip==26.2.2
 setuptools==81.0.0
 wheel==0.47.0
-zc.buildout==5.2.0
+zc.buildout==5.1.2
